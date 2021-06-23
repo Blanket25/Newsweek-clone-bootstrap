@@ -1,0 +1,207 @@
+body {
+  background-color: rgb(244, 245, 246);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Nav bar*/
+
+nav {
+  align-items: flex-end;
+  background-color: #f72210;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav p:first-child {
+  margin: 0;
+}
+
+.logo {
+  fill: white;
+}
+
+.actions a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.actions button {
+  background-color: #ffe400;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  font-weight: 600;
+  margin-left: 1rem;
+  padding: 0.2rem 0.8rem;
+}
+
+/*Menu*/
+
+.menu {
+  padding: 1rem 0;
+}
+
+.topics {
+  border-top: 1px solid rgb(244, 245, 246);
+  border-bottom: 1px solid rgb(244, 245, 246);
+  margin-right: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.menu a,
+.topics a {
+  color: #000;
+  font-weight: 700;
+}
+
+.menu a {
+  border-right: 1px solid rgb(244, 245, 246);
+  padding: 0 1rem;
+}
+
+.topics a {
+  color: rgb(128, 127, 132);
+  font-size: 0.9rem;
+  margin-right: 2rem;
+}
+
+.topics a:first-child {
+  color: #000;
+}
+
+/**Content**/
+
+/*General*/
+
+header,
+main {
+  background-color: white;
+  margin: 0 6rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+.flex-article {
+  align-items: flex-start;
+  border-top: 1px solid rgb(198, 197, 201);
+  display: flex;
+  padding-top: 1rem;
+}
+
+.flex-article div {
+  margin-left: 1rem;
+}
+.flex-article p {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+
+.flex-container:first-of-type {
+  border-bottom: 3px double rgb(217, 217, 217);
+}
+
+.debate {
+  border-top: 4px solid rgb(217, 217, 217);
+  border-bottom: 4px solid rgb(217, 217, 217);
+}
+
+.flex-container img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+img.order {
+  order: 3;
+}
+
+.flex-container div {
+  margin-left: 1rem;
+}
+
+.flex-container p:first-of-type {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.flex-container p:last-of-type {
+  color: rgb(109, 108, 108);
+  font-size: 0.9rem;
+}
+
+.flex-container span {
+  font-weight: 700;
+}
+
+.vs {
+  align-items: center;
+  background-color: #000;
+  border-radius: 50%;
+  color: rgb(214, 214, 214);
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -1rem;
+  text-align: center;
+  width: 2rem;
+}
+
+.title-section {
+  margin-top: 1.5rem;
+}
+
+/*Text*/
+
+h2 {
+  color: rgba(3, 3, 3, 0.4);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .menu a {
+    padding: 0 0.3rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .actions,
+  .menu,
+  .topics {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  nav p:first-child {
+    display: none;
+  }
+}
